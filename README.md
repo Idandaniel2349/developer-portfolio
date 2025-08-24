@@ -18,7 +18,7 @@ This repository is designed to provide a **clear overview of my coding projects*
 Each project contains a **project-specific README** with instructions on how to run or build it. Explore the folders for more details.
 
 ## Contact
-- LinkedIn: [linkedin.com/in/idan-daniel](https://linkedin.com/in/idan-daniel)  
+- LinkedIn: [linkedin.com/in/idan-daniel](linkedin.com/in/idan-daniel-75b990185)  
 ---
 
 
