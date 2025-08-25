@@ -11,7 +11,7 @@ This repository is designed to provide a **clear overview of my coding projects*
 ## Projects
 
 | Project Name | Description | Skills / Focus | Link |
-|---------BookReccomander-----|-------------|----------------|------|
+|--------------|-------------|----------------|------|
 
 
 ## How to Use
