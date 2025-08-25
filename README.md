@@ -10,8 +10,9 @@ This repository is designed to provide a **clear overview of my coding projects*
 
 ## Projects
 
-| Project Name | Description | Skills / Focus | Link |
+| Project Name | Description | Skills / Focus | Main Folder |
 |--------------|-------------|----------------|------|
+| BookRecoomender| A book reccomending app | Python, pandas, numpy, scikit-learn, Streamlit  |PythonProjects|
 
 
 ## How to Use
