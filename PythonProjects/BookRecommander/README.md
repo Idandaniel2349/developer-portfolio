@@ -55,20 +55,13 @@ This project is structured into four main parts:
 
 ## Getting Started
 
-1. Clone the repository:
-   
-git clone https://github.com/Idandaniel2349/developer-portfolio.git
+1. Clone the repository: git clone https://github.com/Idandaniel2349/developer-portfolio.git
 
-2. Navigate to the project folder:
-cd developer-portfolio/PythonProjects/BookRecommander
+2. Navigate to the project folder: cd developer-portfolio/PythonProjects/BookRecommander
 
+3. Install dependencies: pip install -r requirements.txt
 
-3. Install dependencies:
-pip install -r requirements.txt
-
-
-4. Run the Streamlit app:
-streamlit run book_recommender_app.py
+4. Run the Streamlit app: streamlit run book_recommender_app.py
 
 ## Tech Stack
 
