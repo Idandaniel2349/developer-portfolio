@@ -56,8 +56,8 @@ This project is structured into four main parts:
 ## Getting Started
 
 1. Clone the repository:
-git clone 
-cd book-recommender
+git clone https://github.com/Idandaniel2349/developer-portfolio.git
+cd developer-portfolio/PythonProjects/BookRecommander
 
 
 2. Install dependencies:
