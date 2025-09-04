@@ -49,7 +49,7 @@ Example for Solve Board with Expectimax solver in UI:
    - Used multiprocessing for batch testing of AI solvers.
    ---
 
-   ## Getting Started
+## Getting Started
    1. Clone the repository: git clone https://github.com/Idandaniel2349/developer-portfolio.git
    2. Navigate to the project folder: cd developer-portfolio/PythonProjects/2048-solver
    3. Run the 2048 GUI (manual or AI play):
