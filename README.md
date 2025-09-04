@@ -12,7 +12,7 @@ This repository is designed to provide a **clear overview of my coding projects*
 
 | Project Name | Description | Skills / Focus | Main Folder |
 |--------------|-------------|----------------|------|
-| BookRecoomender| A book reccomending app | Python, pandas, numpy, scikit-learn, Streamlit  |PythonProjects|
+| BookRecoomender| A book recommandation app | Python, pandas, numpy, scikit-learn, Streamlit  |PythonProjects|
 | ChromeDownloadScannerExtension| A chrome extension to block certain file types |  JavaScript, Chrome Extension APIs, Java, Spring Boot, Maven, JUnit  |JavaProjects|
 
 
