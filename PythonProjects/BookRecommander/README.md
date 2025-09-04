@@ -13,6 +13,9 @@ It recommends books based on **text similarity**, **genre similarity**, and **ra
 - **Interactive Streamlit UI** with book covers, ratings, genres, and expandable descriptions.
 
 ---
+
+## UI example
+![Book Recommender UI](images/UI.png)
 ## Project Workflow
 
 This project is structured into four main parts:
@@ -69,9 +72,4 @@ This project is structured into four main parts:
 - **pandas, numpy** – Data cleaning & preprocessing
 - **scikit-learn** – TF-IDF, normalization, similarity calculations
 - **Streamlit** – Interactive UI
-
-
-
-## UI example
-![Book Recommender UI](images/UI.png)
 
