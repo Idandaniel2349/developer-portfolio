@@ -10,10 +10,11 @@ This repository is designed to provide a **clear overview of my coding projects*
 
 ## Projects
 
-| Project Name | Description | Skills / Focus | Main Folder |
+| Project Name | Description | Skills / Focus | Projects Folder |
 |--------------|-------------|----------------|------|
-| BookRecoomender| A book recommandation app | Python, pandas, numpy, scikit-learn, Streamlit  |PythonProjects|
+| BookRecoomender| A book recommandation app | Python, pandas, numpy, scikit-learn, Streamlit, TF-IDF, cosine similarity  |PythonProjects|
 | ChromeDownloadScannerExtension| A chrome extension to block certain file types |  JavaScript, Chrome Extension APIs, Java, Spring Boot, Maven, JUnit  |JavaProjects|
+|2048-solver| A 2048 game with AI solvers and GUI for manual and automatic play | Python, Tkinter, AI Algorithms: Heuristic evaluation, Expectimax search, unittest, multiprocessing | PythonProjects|
 
 
 ## How to Use
