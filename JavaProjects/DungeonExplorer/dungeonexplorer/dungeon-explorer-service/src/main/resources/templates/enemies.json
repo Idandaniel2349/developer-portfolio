@@ -1,0 +1,5 @@
+[
+  {"id": "goblin","name": "Goblin", "baseHealth":  1, "baseAttack": 1,"baseXp": 1, "defeated":  false, "isBoss":  false},
+  {"id": "skeleton","name": "Skeleton", "baseHealth":  1, "baseAttack": 1,"baseXp": 1, "defeated":  false, "isBoss":  false},
+  {"id": "orc","name": "Orc", "baseHealth":  2, "baseAttack": 1,"baseXp": 2, "defeated":  false, "isBoss":  false}
+]

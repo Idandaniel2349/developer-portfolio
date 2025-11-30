@@ -1,0 +1,5 @@
+[
+  {"id": "health_up","name": "Health Up", "description": "A potion that adds 1 Health point", "type": "HEALING", "value" : 1},
+  {"id": "attack_up","name": "Attack Up", "description": "A potion that adds 1 Attack point", "type": "ATTACK", "value" : 1},
+  {"id": "defense_up","name": "Defense Up", "description": "A potion that adds 1 Defense point", "type": "DEFENSE", "value" : 1}
+]

@@ -1,0 +1,5 @@
+[
+  {"id": "dragon","name": "Dragon", "baseHealth":  1, "baseAttack": 1,"baseXp": 1, "defeated":  false, "isBoss":  true},
+  {"id": "lich_king","name": "Lich King", "baseHealth":  1, "baseAttack": 1,"baseXp": 1, "defeated":  false, "isBoss":  true},
+  {"id": "orc_warlord","name": "Orc Warlord", "baseHealth":  2, "baseAttack": 1,"baseXp": 2, "defeated":  false, "isBoss":  true}
+]

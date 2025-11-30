@@ -1,0 +1,996 @@
+{
+  "sessionId": "0c14532a-bb3b-42e5-b248-f12d84292f93",
+  "player": {
+    "id": "5ea421da-4590-451d-a781-d403671fabfd",
+    "name": "Player1",
+    "stats": {
+      "health": 1,
+      "attack": 1,
+      "defense": 1
+    },
+    "level": 1,
+    "xp": 0,
+    "inventory": {
+      "items": {}
+    },
+    "currentFloorNumber": 1,
+    "currentRoomId": "floor1_room4"
+  },
+  "dungeon": {
+    "floors": [
+      {
+        "floorNumber": 1,
+        "numberOfRooms": 5,
+        "startingRoomId": "floor1_room4",
+        "exitRoomId": "floor1_room3",
+        "roomIds": [
+          "floor1_room0",
+          "floor1_room1",
+          "floor1_room2",
+          "floor1_room3",
+          "floor1_room4"
+        ]
+      },
+      {
+        "floorNumber": 2,
+        "numberOfRooms": 5,
+        "startingRoomId": "floor2_room2",
+        "exitRoomId": "floor2_room3",
+        "roomIds": [
+          "floor2_room0",
+          "floor2_room1",
+          "floor2_room2",
+          "floor2_room3",
+          "floor2_room4"
+        ]
+      },
+      {
+        "floorNumber": 3,
+        "numberOfRooms": 8,
+        "startingRoomId": "floor3_room7",
+        "exitRoomId": "floor3_room2",
+        "roomIds": [
+          "floor3_room0",
+          "floor3_room1",
+          "floor3_room2",
+          "floor3_room3",
+          "floor3_room4",
+          "floor3_room5",
+          "floor3_room6",
+          "floor3_room7"
+        ]
+      }
+    ],
+    "roomById": {
+      "floor2_room0": {
+        "id": "floor2_room0",
+        "roomName": "Room0",
+        "description": "A dungeon Room",
+        "exits": {
+          "south": "floor2_room2",
+          "west": "floor2_room1"
+        },
+        "loot": [],
+        "enemies": [],
+        "visited": false,
+        "x": 0,
+        "y": 1,
+        "startingRoom": false,
+        "exitRoom": false
+      },
+      "floor3_room5": {
+        "id": "floor3_room5",
+        "roomName": "Room5",
+        "description": "A dungeon Room",
+        "exits": {
+          "east": "floor3_room2",
+          "west": "floor3_room1"
+        },
+        "loot": [],
+        "enemies": [
+          {
+            "id": "63cdef52-df2e-47e4-982f-0f247bf4f0bd",
+            "templateId": "orc",
+            "name": "Orc",
+            "stats": {
+              "health": 5,
+              "attack": 3,
+              "defense": 0
+            },
+            "xp": 5,
+            "loot": [
+              {
+                "id": "82ccf38d-705a-4d51-9cdd-63d667b5afcf",
+                "item": {
+                  "id": "a14eeb2e-b9e2-4230-8ef0-217bca1f3b25",
+                  "templateId": "defense_up",
+                  "name": "Defense Up",
+                  "description": "A potion that adds 1 Defense point",
+                  "type": "DEFENSE",
+                  "value": 1
+                },
+                "dropChance": 0.2,
+                "quantity": 1
+              }
+            ],
+            "defeated": false
+          }
+        ],
+        "visited": false,
+        "x": 5,
+        "y": 1,
+        "startingRoom": false,
+        "exitRoom": false
+      },
+      "floor2_room1": {
+        "id": "floor2_room1",
+        "roomName": "Room1",
+        "description": "A dungeon Room",
+        "exits": {
+          "east": "floor2_room0",
+          "south": "floor2_room4"
+        },
+        "loot": [],
+        "enemies": [
+          {
+            "id": "4af13332-6290-4a12-9a22-0473a7913fe4",
+            "templateId": "skeleton",
+            "name": "Skeleton",
+            "stats": {
+              "health": 3,
+              "attack": 2,
+              "defense": 0
+            },
+            "xp": 3,
+            "loot": [
+              {
+                "id": "2d64b5bc-c88a-4301-bd92-cb3042289ca4",
+                "item": {
+                  "id": "a14eeb2e-b9e2-4230-8ef0-217bca1f3b25",
+                  "templateId": "defense_up",
+                  "name": "Defense Up",
+                  "description": "A potion that adds 1 Defense point",
+                  "type": "DEFENSE",
+                  "value": 1
+                },
+                "dropChance": 0.2,
+                "quantity": 1
+              }
+            ],
+            "defeated": false
+          }
+        ],
+        "visited": false,
+        "x": -1,
+        "y": 1,
+        "startingRoom": false,
+        "exitRoom": false
+      },
+      "floor3_room6": {
+        "id": "floor3_room6",
+        "roomName": "Room6",
+        "description": "A dungeon Room",
+        "exits": {
+          "east": "floor3_room4",
+          "west": "floor3_room3"
+        },
+        "loot": [
+          {
+            "id": "f78dc1a7-b4ca-421d-9f1c-e290dd05fd40",
+            "item": {
+              "id": "d2841c98-4edb-4aa7-8ca6-63ec0fccd2ae",
+              "templateId": "defense_up",
+              "name": "Defense Up",
+              "description": "A potion that adds 1 Defense point",
+              "type": "DEFENSE",
+              "value": 1
+            },
+            "dropChance": 0.2,
+            "quantity": 1
+          }
+        ],
+        "enemies": [],
+        "visited": false,
+        "x": 1,
+        "y": 1,
+        "startingRoom": false,
+        "exitRoom": false
+      },
+      "floor2_room2": {
+        "id": "floor2_room2",
+        "roomName": "Room2",
+        "description": "A dungeon Room",
+        "exits": {
+          "north": "floor2_room0",
+          "west": "floor2_room4"
+        },
+        "loot": [
+          {
+            "id": "a47f83e6-5073-464f-a81f-0089165b7342",
+            "item": {
+              "id": "c3ab8d8c-4700-41c2-af77-cb7403119d3e",
+              "templateId": "attack_up",
+              "name": "Attack Up",
+              "description": "A potion that adds 1 Attack point",
+              "type": "ATTACK",
+              "value": 1
+            },
+            "dropChance": 0.2,
+            "quantity": 1
+          }
+        ],
+        "enemies": [],
+        "visited": false,
+        "x": 0,
+        "y": 0,
+        "startingRoom": true,
+        "exitRoom": false
+      },
+      "floor3_room3": {
+        "id": "floor3_room3",
+        "roomName": "Room3",
+        "description": "A dungeon Room",
+        "exits": {
+          "east": "floor3_room6",
+          "south": "floor3_room7"
+        },
+        "loot": [
+          {
+            "id": "164607bf-ac8b-4249-86e3-dacf7d3d4721",
+            "item": {
+              "id": "4108cc07-9858-4d63-9844-878dd07abdea",
+              "templateId": "health_up",
+              "name": "Health Up",
+              "description": "A potion that adds 1 Health point",
+              "type": "HEALING",
+              "value": 1
+            },
+            "dropChance": 0.2,
+            "quantity": 1
+          }
+        ],
+        "enemies": [],
+        "visited": false,
+        "x": 0,
+        "y": 1,
+        "startingRoom": false,
+        "exitRoom": false
+      },
+      "floor2_room3": {
+        "id": "floor2_room3",
+        "roomName": "Room3",
+        "description": "A dungeon Room",
+        "exits": {
+          "north": "floor2_room4"
+        },
+        "loot": [],
+        "enemies": [],
+        "visited": false,
+        "x": -1,
+        "y": -1,
+        "startingRoom": false,
+        "exitRoom": true
+      },
+      "floor3_room4": {
+        "id": "floor3_room4",
+        "roomName": "Room4",
+        "description": "A dungeon Room",
+        "exits": {
+          "east": "floor3_room0",
+          "west": "floor3_room6"
+        },
+        "loot": [
+          {
+            "id": "d781ad2e-85fb-4ca7-bc54-70f7d8fa27c0",
+            "item": {
+              "id": "d2841c98-4edb-4aa7-8ca6-63ec0fccd2ae",
+              "templateId": "defense_up",
+              "name": "Defense Up",
+              "description": "A potion that adds 1 Defense point",
+              "type": "DEFENSE",
+              "value": 1
+            },
+            "dropChance": 0.2,
+            "quantity": 1
+          }
+        ],
+        "enemies": [],
+        "visited": false,
+        "x": 2,
+        "y": 1,
+        "startingRoom": false,
+        "exitRoom": false
+      },
+      "floor3_room7": {
+        "id": "floor3_room7",
+        "roomName": "Room7",
+        "description": "A dungeon Room",
+        "exits": {
+          "north": "floor3_room3"
+        },
+        "loot": [],
+        "enemies": [
+          {
+            "id": "8be9610e-c569-493a-b42c-1121997981c1",
+            "templateId": "goblin",
+            "name": "Goblin",
+            "stats": {
+              "health": 4,
+              "attack": 3,
+              "defense": 0
+            },
+            "xp": 4,
+            "loot": [
+              {
+                "id": "d0f7aabb-ece1-4c6a-af33-bb64a7a09efb",
+                "item": {
+                  "id": "5e7fb83c-75d6-4386-a00c-ea80495e32b2",
+                  "templateId": "attack_up",
+                  "name": "Attack Up",
+                  "description": "A potion that adds 1 Attack point",
+                  "type": "ATTACK",
+                  "value": 1
+                },
+                "dropChance": 0.2,
+                "quantity": 1
+              }
+            ],
+            "defeated": false
+          },
+          {
+            "id": "210fc85e-d00e-4a73-82b0-c7c5afbb795a",
+            "templateId": "goblin",
+            "name": "Goblin",
+            "stats": {
+              "health": 4,
+              "attack": 3,
+              "defense": 0
+            },
+            "xp": 4,
+            "loot": [
+              {
+                "id": "a4a5b939-94ee-481f-983d-9cfe90671196",
+                "item": {
+                  "id": "9bac009c-60e8-4da3-ac48-606a84aefb33",
+                  "templateId": "health_up",
+                  "name": "Health Up",
+                  "description": "A potion that adds 1 Health point",
+                  "type": "HEALING",
+                  "value": 1
+                },
+                "dropChance": 0.2,
+                "quantity": 1
+              },
+              {
+                "id": "569c95d7-b54c-48f2-881b-ef08e564c1fe",
+                "item": {
+                  "id": "5e7fb83c-75d6-4386-a00c-ea80495e32b2",
+                  "templateId": "attack_up",
+                  "name": "Attack Up",
+                  "description": "A potion that adds 1 Attack point",
+                  "type": "ATTACK",
+                  "value": 1
+                },
+                "dropChance": 0.2,
+                "quantity": 1
+              }
+            ],
+            "defeated": false
+          }
+        ],
+        "visited": false,
+        "x": 0,
+        "y": 0,
+        "startingRoom": true,
+        "exitRoom": false
+      },
+      "floor1_room2": {
+        "id": "floor1_room2",
+        "roomName": "Room2",
+        "description": "A dungeon Room",
+        "exits": {
+          "east": "floor1_room0",
+          "north": "floor1_room4"
+        },
+        "loot": [
+          {
+            "id": "cee32e16-fc35-4c19-8d75-6cd3eef165dd",
+            "item": {
+              "id": "c3ab8d8c-4700-41c2-af77-cb7403119d3e",
+              "templateId": "attack_up",
+              "name": "Attack Up",
+              "description": "A potion that adds 1 Attack point",
+              "type": "ATTACK",
+              "value": 1
+            },
+            "dropChance": 0.2,
+            "quantity": 1
+          },
+          {
+            "id": "2718b7be-2591-4a43-85ef-049370060e86",
+            "item": {
+              "id": "c3ab8d8c-4700-41c2-af77-cb7403119d3e",
+              "templateId": "attack_up",
+              "name": "Attack Up",
+              "description": "A potion that adds 1 Attack point",
+              "type": "ATTACK",
+              "value": 1
+            },
+            "dropChance": 0.2,
+            "quantity": 1
+          }
+        ],
+        "enemies": [
+          {
+            "id": "631fabee-8804-4549-b0f1-69b7dca4bc16",
+            "templateId": "goblin",
+            "name": "Goblin",
+            "stats": {
+              "health": 2,
+              "attack": 1,
+              "defense": 0
+            },
+            "xp": 2,
+            "loot": [
+              {
+                "id": "e8d1e3e4-79e1-4290-b34a-88e0f1fd2e4e",
+                "item": {
+                  "id": "a14eeb2e-b9e2-4230-8ef0-217bca1f3b25",
+                  "templateId": "defense_up",
+                  "name": "Defense Up",
+                  "description": "A potion that adds 1 Defense point",
+                  "type": "DEFENSE",
+                  "value": 1
+                },
+                "dropChance": 0.2,
+                "quantity": 1
+              }
+            ],
+            "defeated": false
+          }
+        ],
+        "visited": false,
+        "x": 0,
+        "y": -1,
+        "startingRoom": false,
+        "exitRoom": false
+      },
+      "floor1_room1": {
+        "id": "floor1_room1",
+        "roomName": "Room1",
+        "description": "A dungeon Room",
+        "exits": {
+          "east": "floor1_room3",
+          "north": "floor1_room0"
+        },
+        "loot": [],
+        "enemies": [
+          {
+            "id": "6e3c479d-6d57-4ec1-bbca-d078c6fad5ec",
+            "templateId": "skeleton",
+            "name": "Skeleton",
+            "stats": {
+              "health": 2,
+              "attack": 1,
+              "defense": 0
+            },
+            "xp": 2,
+            "loot": [],
+            "defeated": false
+          },
+          {
+            "id": "e6d1e2f5-7724-4b97-be2b-f1f9c01d1073",
+            "templateId": "skeleton",
+            "name": "Skeleton",
+            "stats": {
+              "health": 2,
+              "attack": 1,
+              "defense": 0
+            },
+            "xp": 2,
+            "loot": [],
+            "defeated": false
+          }
+        ],
+        "visited": false,
+        "x": 1,
+        "y": -2,
+        "startingRoom": false,
+        "exitRoom": false
+      },
+      "floor1_room4": {
+        "id": "floor1_room4",
+        "roomName": "Room4",
+        "description": "A dungeon Room",
+        "exits": {
+          "south": "floor1_room2"
+        },
+        "loot": [],
+        "enemies": [
+          {
+            "id": "41833a2a-3e06-48fe-bc3f-7b97d49797d2",
+            "templateId": "orc",
+            "name": "Orc",
+            "stats": {
+              "health": 3,
+              "attack": 1,
+              "defense": 0
+            },
+            "xp": 3,
+            "loot": [
+              {
+                "id": "74f894e5-f46d-4641-91bf-d45b68b49ce4",
+                "item": {
+                  "id": "a14eeb2e-b9e2-4230-8ef0-217bca1f3b25",
+                  "templateId": "defense_up",
+                  "name": "Defense Up",
+                  "description": "A potion that adds 1 Defense point",
+                  "type": "DEFENSE",
+                  "value": 1
+                },
+                "dropChance": 0.2,
+                "quantity": 1
+              }
+            ],
+            "defeated": false
+          },
+          {
+            "id": "3d1fcfb9-bf03-40d6-a018-be4d15d0af5c",
+            "templateId": "goblin",
+            "name": "Goblin",
+            "stats": {
+              "health": 2,
+              "attack": 1,
+              "defense": 0
+            },
+            "xp": 2,
+            "loot": [
+              {
+                "id": "58df01e0-dc81-48c7-9275-b848d27480d8",
+                "item": {
+                  "id": "5e7fb83c-75d6-4386-a00c-ea80495e32b2",
+                  "templateId": "attack_up",
+                  "name": "Attack Up",
+                  "description": "A potion that adds 1 Attack point",
+                  "type": "ATTACK",
+                  "value": 1
+                },
+                "dropChance": 0.2,
+                "quantity": 1
+              },
+              {
+                "id": "1fe3f898-297a-486d-97b4-a071ad2a5c00",
+                "item": {
+                  "id": "5e7fb83c-75d6-4386-a00c-ea80495e32b2",
+                  "templateId": "attack_up",
+                  "name": "Attack Up",
+                  "description": "A potion that adds 1 Attack point",
+                  "type": "ATTACK",
+                  "value": 1
+                },
+                "dropChance": 0.2,
+                "quantity": 1
+              }
+            ],
+            "defeated": false
+          }
+        ],
+        "visited": false,
+        "x": 0,
+        "y": 0,
+        "startingRoom": true,
+        "exitRoom": false
+      },
+      "floor1_room3": {
+        "id": "floor1_room3",
+        "roomName": "Room3",
+        "description": "A dungeon Room",
+        "exits": {
+          "west": "floor1_room1"
+        },
+        "loot": [
+          {
+            "id": "011a7b51-7823-42a7-a82b-ca5450d1595d",
+            "item": {
+              "id": "c3ab8d8c-4700-41c2-af77-cb7403119d3e",
+              "templateId": "attack_up",
+              "name": "Attack Up",
+              "description": "A potion that adds 1 Attack point",
+              "type": "ATTACK",
+              "value": 1
+            },
+            "dropChance": 0.2,
+            "quantity": 1
+          }
+        ],
+        "enemies": [
+          {
+            "id": "b92d9ab5-990b-4402-8c8c-b3efa79c7008",
+            "templateId": "goblin",
+            "name": "Goblin",
+            "stats": {
+              "health": 2,
+              "attack": 1,
+              "defense": 0
+            },
+            "xp": 2,
+            "loot": [
+              {
+                "id": "2d9730ea-240e-4492-ab18-2b91db2cc3c9",
+                "item": {
+                  "id": "5e7fb83c-75d6-4386-a00c-ea80495e32b2",
+                  "templateId": "attack_up",
+                  "name": "Attack Up",
+                  "description": "A potion that adds 1 Attack point",
+                  "type": "ATTACK",
+                  "value": 1
+                },
+                "dropChance": 0.2,
+                "quantity": 1
+              }
+            ],
+            "defeated": false
+          }
+        ],
+        "visited": false,
+        "x": 2,
+        "y": -2,
+        "startingRoom": false,
+        "exitRoom": true
+      },
+      "floor1_room0": {
+        "id": "floor1_room0",
+        "roomName": "Room0",
+        "description": "A dungeon Room",
+        "exits": {
+          "south": "floor1_room1",
+          "west": "floor1_room2"
+        },
+        "loot": [],
+        "enemies": [],
+        "visited": false,
+        "x": 1,
+        "y": -1,
+        "startingRoom": false,
+        "exitRoom": false
+      },
+      "floor2_room4": {
+        "id": "floor2_room4",
+        "roomName": "Room4",
+        "description": "A dungeon Room",
+        "exits": {
+          "east": "floor2_room2",
+          "south": "floor2_room3",
+          "north": "floor2_room1"
+        },
+        "loot": [],
+        "enemies": [
+          {
+            "id": "47770ba7-34e0-40e0-88ec-3cc6561c3f99",
+            "templateId": "skeleton",
+            "name": "Skeleton",
+            "stats": {
+              "health": 3,
+              "attack": 2,
+              "defense": 0
+            },
+            "xp": 3,
+            "loot": [
+              {
+                "id": "591aecd8-93ff-47bd-b770-873dd3104c13",
+                "item": {
+                  "id": "5e7fb83c-75d6-4386-a00c-ea80495e32b2",
+                  "templateId": "attack_up",
+                  "name": "Attack Up",
+                  "description": "A potion that adds 1 Attack point",
+                  "type": "ATTACK",
+                  "value": 1
+                },
+                "dropChance": 0.2,
+                "quantity": 1
+              },
+              {
+                "id": "98040276-735a-4876-a0fe-3195b83e0cbf",
+                "item": {
+                  "id": "9bac009c-60e8-4da3-ac48-606a84aefb33",
+                  "templateId": "health_up",
+                  "name": "Health Up",
+                  "description": "A potion that adds 1 Health point",
+                  "type": "HEALING",
+                  "value": 1
+                },
+                "dropChance": 0.2,
+                "quantity": 1
+              }
+            ],
+            "defeated": false
+          },
+          {
+            "id": "e9721663-6793-4548-ab42-08507e6ba2b2",
+            "templateId": "goblin",
+            "name": "Goblin",
+            "stats": {
+              "health": 3,
+              "attack": 2,
+              "defense": 0
+            },
+            "xp": 3,
+            "loot": [
+              {
+                "id": "f1203d05-b91b-44e6-b4e1-d6cbfb9f00e8",
+                "item": {
+                  "id": "5e7fb83c-75d6-4386-a00c-ea80495e32b2",
+                  "templateId": "attack_up",
+                  "name": "Attack Up",
+                  "description": "A potion that adds 1 Attack point",
+                  "type": "ATTACK",
+                  "value": 1
+                },
+                "dropChance": 0.2,
+                "quantity": 1
+              },
+              {
+                "id": "0d73e730-049b-4de1-a246-a2a35497171c",
+                "item": {
+                  "id": "5e7fb83c-75d6-4386-a00c-ea80495e32b2",
+                  "templateId": "attack_up",
+                  "name": "Attack Up",
+                  "description": "A potion that adds 1 Attack point",
+                  "type": "ATTACK",
+                  "value": 1
+                },
+                "dropChance": 0.2,
+                "quantity": 1
+              }
+            ],
+            "defeated": false
+          }
+        ],
+        "visited": false,
+        "x": -1,
+        "y": 0,
+        "startingRoom": false,
+        "exitRoom": false
+      },
+      "floor3_room1": {
+        "id": "floor3_room1",
+        "roomName": "Room1",
+        "description": "A dungeon Room",
+        "exits": {
+          "east": "floor3_room5",
+          "west": "floor3_room0"
+        },
+        "loot": [
+          {
+            "id": "3c5a0a9e-ec7e-4a87-b4bd-fa25b66cc240",
+            "item": {
+              "id": "4108cc07-9858-4d63-9844-878dd07abdea",
+              "templateId": "health_up",
+              "name": "Health Up",
+              "description": "A potion that adds 1 Health point",
+              "type": "HEALING",
+              "value": 1
+            },
+            "dropChance": 0.2,
+            "quantity": 1
+          }
+        ],
+        "enemies": [],
+        "visited": false,
+        "x": 4,
+        "y": 1,
+        "startingRoom": false,
+        "exitRoom": false
+      },
+      "floor3_room2": {
+        "id": "floor3_room2",
+        "roomName": "Room2",
+        "description": "A dungeon Room",
+        "exits": {
+          "west": "floor3_room5"
+        },
+        "loot": [
+          {
+            "id": "3f9745d1-cf68-496a-b32e-9eb3ad3af928",
+            "item": {
+              "id": "c3ab8d8c-4700-41c2-af77-cb7403119d3e",
+              "templateId": "attack_up",
+              "name": "Attack Up",
+              "description": "A potion that adds 1 Attack point",
+              "type": "ATTACK",
+              "value": 1
+            },
+            "dropChance": 0.2,
+            "quantity": 1
+          }
+        ],
+        "enemies": [
+          {
+            "id": "bf63c459-68be-4e24-bd22-f1e91cb00ff6",
+            "templateId": "orc",
+            "name": "Orc",
+            "stats": {
+              "health": 5,
+              "attack": 3,
+              "defense": 0
+            },
+            "xp": 5,
+            "loot": [
+              {
+                "id": "e4b80ecc-2521-4fa5-86cd-51460d45d428",
+                "item": {
+                  "id": "9bac009c-60e8-4da3-ac48-606a84aefb33",
+                  "templateId": "health_up",
+                  "name": "Health Up",
+                  "description": "A potion that adds 1 Health point",
+                  "type": "HEALING",
+                  "value": 1
+                },
+                "dropChance": 0.2,
+                "quantity": 1
+              }
+            ],
+            "defeated": false
+          },
+          {
+            "id": "106e6300-686d-4f7f-b089-48d7329bb4a3",
+            "templateId": "goblin",
+            "name": "Goblin",
+            "stats": {
+              "health": 4,
+              "attack": 3,
+              "defense": 0
+            },
+            "xp": 4,
+            "loot": [
+              {
+                "id": "19ce5328-41c9-4a25-a639-472a0eba2134",
+                "item": {
+                  "id": "9bac009c-60e8-4da3-ac48-606a84aefb33",
+                  "templateId": "health_up",
+                  "name": "Health Up",
+                  "description": "A potion that adds 1 Health point",
+                  "type": "HEALING",
+                  "value": 1
+                },
+                "dropChance": 0.2,
+                "quantity": 1
+              },
+              {
+                "id": "bc229353-c9f2-4f84-a6e3-ec76fe22ab58",
+                "item": {
+                  "id": "a14eeb2e-b9e2-4230-8ef0-217bca1f3b25",
+                  "templateId": "defense_up",
+                  "name": "Defense Up",
+                  "description": "A potion that adds 1 Defense point",
+                  "type": "DEFENSE",
+                  "value": 1
+                },
+                "dropChance": 0.2,
+                "quantity": 1
+              }
+            ],
+            "defeated": false
+          }
+        ],
+        "visited": false,
+        "x": 6,
+        "y": 1,
+        "startingRoom": false,
+        "exitRoom": true
+      },
+      "floor3_room0": {
+        "id": "floor3_room0",
+        "roomName": "Room0",
+        "description": "A dungeon Room",
+        "exits": {
+          "east": "floor3_room1",
+          "west": "floor3_room4"
+        },
+        "loot": [],
+        "enemies": [
+          {
+            "id": "2eb6eb92-35cf-45ad-8e3e-a92afe15e67e",
+            "templateId": "skeleton",
+            "name": "Skeleton",
+            "stats": {
+              "health": 4,
+              "attack": 3,
+              "defense": 0
+            },
+            "xp": 4,
+            "loot": [
+              {
+                "id": "d6fd3d0a-b4cf-42fe-a302-1c18878d69e1",
+                "item": {
+                  "id": "5e7fb83c-75d6-4386-a00c-ea80495e32b2",
+                  "templateId": "attack_up",
+                  "name": "Attack Up",
+                  "description": "A potion that adds 1 Attack point",
+                  "type": "ATTACK",
+                  "value": 1
+                },
+                "dropChance": 0.2,
+                "quantity": 1
+              }
+            ],
+            "defeated": false
+          },
+          {
+            "id": "04db61ec-00fc-4ac7-bc76-5050d398472e",
+            "templateId": "goblin",
+            "name": "Goblin",
+            "stats": {
+              "health": 4,
+              "attack": 3,
+              "defense": 0
+            },
+            "xp": 4,
+            "loot": [
+              {
+                "id": "f744a8af-da96-4ffa-bb99-ba22fc16e2d2",
+                "item": {
+                  "id": "9bac009c-60e8-4da3-ac48-606a84aefb33",
+                  "templateId": "health_up",
+                  "name": "Health Up",
+                  "description": "A potion that adds 1 Health point",
+                  "type": "HEALING",
+                  "value": 1
+                },
+                "dropChance": 0.2,
+                "quantity": 1
+              }
+            ],
+            "defeated": false
+          },
+          {
+            "id": "88c6930a-8ffb-498f-bd49-c8cd3b4bc637",
+            "templateId": "orc",
+            "name": "Orc",
+            "stats": {
+              "health": 5,
+              "attack": 3,
+              "defense": 0
+            },
+            "xp": 5,
+            "loot": [
+              {
+                "id": "8126de9a-aaa2-4cfc-a169-fc61b28f1844",
+                "item": {
+                  "id": "5e7fb83c-75d6-4386-a00c-ea80495e32b2",
+                  "templateId": "attack_up",
+                  "name": "Attack Up",
+                  "description": "A potion that adds 1 Attack point",
+                  "type": "ATTACK",
+                  "value": 1
+                },
+                "dropChance": 0.2,
+                "quantity": 1
+              },
+              {
+                "id": "9c754ba5-9796-4026-9b83-be5bc82a8620",
+                "item": {
+                  "id": "a14eeb2e-b9e2-4230-8ef0-217bca1f3b25",
+                  "templateId": "defense_up",
+                  "name": "Defense Up",
+                  "description": "A potion that adds 1 Defense point",
+                  "type": "DEFENSE",
+                  "value": 1
+                },
+                "dropChance": 0.2,
+                "quantity": 1
+              }
+            ],
+            "defeated": false
+          }
+        ],
+        "visited": false,
+        "x": 3,
+        "y": 1,
+        "startingRoom": false,
+        "exitRoom": false
+      }
+    }
+  },
+  "active": true
+}

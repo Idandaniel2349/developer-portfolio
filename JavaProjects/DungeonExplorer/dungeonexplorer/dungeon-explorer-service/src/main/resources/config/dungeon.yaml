@@ -1,0 +1,10 @@
+floors: 3
+minRoomsPerFloor: 3
+maxRoomsPerFloor: 6
+minEnemiesPerRoom: 1
+maxEnemiesPerRoom: 3
+minLootPerRoom: 0
+maxLootPerRoom: 2
+lootQuantity: 1
+enemySpawnChance: 0.5
+lootSpawnChance: 0.3

@@ -1,0 +1,41 @@
+{
+  "sessionId" : "0c14532a-bb3b-42e5-b248-f12d84292f93",
+  "player" : {
+    "id" : "5ea421da-4590-451d-a781-d403671fabfd",
+    "name" : "Player1",
+    "stats" : {
+      "health" : 1,
+      "attack" : 1,
+      "defense" : 1
+    },
+    "xp" : 0,
+    "level" : 1,
+    "currentFloorNumber" : 1,
+    "currentRoomId" : "floor1_room4",
+    "inventory" : {
+      "items" : { }
+    }
+  },
+  "dungeon" : {
+    "floors" : [ {
+      "floorNumber" : 1,
+      "numberOfRooms" : 5,
+      "roomIds" : [ "floor1_room0", "floor1_room1", "floor1_room2", "floor1_room3", "floor1_room4" ],
+      "startingRoomId" : "floor1_room4",
+      "exitRoomId" : "floor1_room3"
+    }, {
+      "floorNumber" : 2,
+      "numberOfRooms" : 5,
+      "roomIds" : [ "floor2_room0", "floor2_room1", "floor2_room2", "floor2_room3", "floor2_room4" ],
+      "startingRoomId" : "floor2_room2",
+      "exitRoomId" : "floor2_room3"
+    }, {
+      "floorNumber" : 3,
+      "numberOfRooms" : 8,
+      "roomIds" : [ "floor3_room0", "floor3_room1", "floor3_room2", "floor3_room3", "floor3_room4", "floor3_room5", "floor3_room6", "floor3_room7" ],
+      "startingRoomId" : "floor3_room7",
+      "exitRoomId" : "floor3_room2"
+    } ]
+  },
+  "active" : true
+}
