@@ -31,12 +31,6 @@
         </dependency>
         <dependency>
             <groupId>com.dungeonexplorer</groupId>
-            <artifactId>dungeon-explorer-service</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>com.dungeonexplorer</groupId>
             <artifactId>dungeon-explorer-api</artifactId>
             <version>0.0.1-SNAPSHOT</version>
             <scope>test</scope>

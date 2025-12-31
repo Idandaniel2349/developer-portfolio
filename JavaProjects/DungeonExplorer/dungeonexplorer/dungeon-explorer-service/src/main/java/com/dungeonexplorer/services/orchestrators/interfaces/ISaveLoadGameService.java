@@ -25,12 +25,4 @@ public interface ISaveLoadGameService {
      * @throws IOException If the file is missing or cannot be parsed.
      */
     GameSession load(UUID gameSessionId) throws IOException;
-
-    /**
-     * Checks whether a saved game file exists for the given session ID.
-     *
-     * @param gameSessionId The ID to check.
-     * @return True if a save file exists, false otherwise.
-     */
-    boolean exists(UUID gameSessionId);
 }

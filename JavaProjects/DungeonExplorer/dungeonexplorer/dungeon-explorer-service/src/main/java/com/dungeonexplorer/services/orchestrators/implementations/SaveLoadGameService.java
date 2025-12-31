@@ -1,52 +1,47 @@
 package com.dungeonexplorer.services.orchestrators.implementations;
 
 import com.dungeonexplorer.models.GameSession;
+import com.dungeonexplorer.services.persistence.GameSaveEntity;
+import com.dungeonexplorer.services.persistence.GameSessionRepository;
 import com.dungeonexplorer.services.orchestrators.interfaces.ISaveLoadGameService;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.io.File;
 import java.io.IOException;
+import java.time.LocalDateTime;
 import java.util.UUID;
 
 @Service
 public class SaveLoadGameService implements ISaveLoadGameService {
 
-    private final String saveFolder;
     private final ObjectMapper objectMapper = new ObjectMapper();
 
-    public SaveLoadGameService() throws IOException {
-        this("/saves");
-    }
-    public SaveLoadGameService(String folderPath) throws IOException {
-        this.saveFolder = folderPath;
-        File folder = new File(saveFolder);
-        if(!folder.exists()){
-            boolean created = folder.mkdir();
-            if(!created){
-                throw new IOException("Failed to create folder " + saveFolder);
-            }
-        }
+    private GameSessionRepository gameSessionRepository;
+
+    public SaveLoadGameService(GameSessionRepository gameSessionRepository) {
+        this.gameSessionRepository = gameSessionRepository;
     }
 
     @Override
     public void save(GameSession gameSession) throws IOException {
-        File saveFile = new File(saveFolder + gameSession.getSessionId() + ".json");
-        objectMapper.writerWithDefaultPrettyPrinter().writeValue(saveFile, gameSession);
+        // Convert the Live Session to a String
+        String jsonData = objectMapper.writeValueAsString(gameSession);
+
+        // Wrap it in the Database Entity
+        GameSaveEntity gameSaveEntity = new GameSaveEntity();
+        gameSaveEntity.setSessionId(gameSession.getSessionId());
+        gameSaveEntity.setSavedAt(LocalDateTime.now());
+        gameSaveEntity.setJsonData(jsonData);
+
+        // save to h2
+        gameSessionRepository.save(gameSaveEntity);
     }
 
     @Override
     public GameSession load(UUID gameSessionId) throws IOException {
-        File saveFile = new File(saveFolder + gameSessionId + ".json");
-        if(!saveFile.exists()){
-            throw new IOException("save file " + gameSessionId +" not found");
-        }
-        return objectMapper.readValue(saveFile, GameSession.class);
-    }
+        GameSaveEntity gameSaveEntity = gameSessionRepository.findById(gameSessionId).orElseThrow();
 
-    @Override
-    public boolean exists(UUID gameSessionId) {
-        File saveFile = new File(saveFolder + gameSessionId + ".json");
-        return saveFile.exists();
+        return objectMapper.readValue(gameSaveEntity.getJsonData(), GameSession.class);
     }
 }
