@@ -116,13 +116,16 @@ It allows players to explore the dungeon, view player stats, manage inventory, a
       ```bash
       python game_loop.py
       ```
-4. The GUI will interact with the backend automatically through REST API calls.
+4. **The GUI** will interact with the backend automatically through REST API calls.
    
 5. **View databse**:
    You can inspect the game info directly via the H2 Console:
-   URL: http://localhost:8080/h2-console
-   JDBC URL: jdbc:h2:file:./data/dungeon_db
-   User: sa | Password: password
+
+   **URL**: http://localhost:8080/h2-console
+
+   **JDBC URL**: jdbc:h2:file:./data/dungeon_db
+
+   **User**: sa | Password: password
 
 ## Tech Stack
 
