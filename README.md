@@ -15,7 +15,7 @@ This repository is designed to provide a **clear overview of my coding projects*
 | BookRecoomender| A book recommandation app | Python, pandas, numpy, scikit-learn, Streamlit, TF-IDF, cosine similarity  |PythonProjects|
 | ChromeDownloadScannerExtension| A chrome extension to block certain file types |  JavaScript, Chrome Extension APIs, Java, Spring Boot, Maven, JUnit  |JavaProjects|
 |2048-solver| A 2048 game with AI solvers and GUI for manual and automatic play | Python, Tkinter, AI Algorithms: Heuristic evaluation, Expectimax search, unittest, multiprocessing | PythonProjects|
-|DungeonExplorer| A turn-based dungeon crawler with procedurally generated floors, combat, loot, and bosses | Java, Spring Boot, Maven, JUnit, Python, Tkinter| JavaProjects
+|DungeonExplorer| A turn-based dungeon crawler with procedurally generated floors, combat, loot, and bosses | Java, Spring Boot, Maven, JUnit, Python, Tkinter, h2 database, docker| JavaProjects
 
 
 ## How to Use
