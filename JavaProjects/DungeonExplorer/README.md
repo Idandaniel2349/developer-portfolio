@@ -10,9 +10,10 @@
 - **Player Stats & Inventory**: Track health, experience, and items with a robust loot system.
 - **Loot System**: Defeat enemies and explore rooms to collect items and gold.
 - **Floor Bosses**: Bosses must be defeated to proceed to the next floor.
-- **Save/Load System**: Save progress locally using JSON files and resume later.
+- **Save/Load System**: Save progress using h2 database.
 - **Python GUI**: Interactive front-end using Tkinter to visualize player stats, inventory, and room navigation.
 - **REST API**: Full backend implemented with Java Spring Boot for handling game logic and session management.
+- **Docker**: To easily run the backend
 
 
 ## Gameplay
@@ -100,36 +101,37 @@ It allows players to explore the dungeon, view player stats, manage inventory, a
    cd dungeon-explorer
    ```
 
-2. **Backend Setup**
-
-   - Ensure Java 17 and Maven are installed.
-
-   - Build the project:
-     ```bash
-     mvn clean install
-     ```
-   - Run the backend:
-      ```bash
-      mvn spring-boot:run
-      ```
+2. **Backend Setup with Docker**
+   This starts the Spring Boot API and creates a local volume for your save files.
+   ```bash
+   docker-compose up --build
+   ```
+   The backend will be live at http://localhost:8080
 
 3. **Frontend Setup**
 
    - Ensure Python 3.x is installed.
 
-   - Run the GUI:
+   - Run the GUI at game_ui subfolder:
       ```bash
       python game_loop.py
       ```
 4. The GUI will interact with the backend automatically through REST API calls.
-
+   
+5. **View databse**:
+   You can inspect the game info directly via the H2 Console:
+   URL: http://localhost:8080/h2-console
+   JDBC URL: jdbc:h2:file:./data/dungeon_db
+   User: sa | Password: password
 
 ## Tech Stack
 
-- **Backend**: Java 17, Spring Boot, Jackson (JSON/YAML)
-- **Frontend**: Python, Tkinter
-- **Persistence**: Local file storage (JSON)
-- **Build Tool**: Maven
+- **Backend**: Java 17, Spring Boot, Eclipse Temurin (Docker Base).
+- **Frontend**: Python, Tkinter.
+- **Database**: Database: H2 Database (File-based).
+- **Persistence**: Game sessions are serialized to JSON and stored in H2, with data persisted across restarts via Docker Volumes.
+- **Build Tool**: Maven.
+- **Testing**: JUnit 5, Mockito (with Repository Mocking and ObjectMapper stubbing).
 
 
 ## Created by
